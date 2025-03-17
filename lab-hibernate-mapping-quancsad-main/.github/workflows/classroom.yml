@@ -1,7 +1,7 @@
 name: Autograding Tests
 'on':
-- push
-- repository_dispatch
+  - push
+  - repository_dispatch
 permissions:
   checks: write
   actions: read
@@ -11,20 +11,20 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: Evaluation
-      id: evaluation
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: Evaluation
-        setup-command: ''
-        command: mvn test
-        timeout: 10
-        max-score: 31
-    - name: Autograding Reporter
-      uses: classroom-resources/autograding-grading-reporter@v1
-      env:
-        EVALUATION_RESULTS: "${{steps.evaluation.outputs.result}}"
-      with:
-        runners: evaluation
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Evaluation
+        id: evaluation
+        uses: classroom-resources/autograding-command-grader@v1
+        with:
+          test-name: Evaluation
+          setup-command: ''
+          command: mvn test
+          timeout: 10
+          max-score: 31
+      - name: Autograding Reporter
+        uses: classroom-resources/autograding-grading-reporter@v1
+        env:
+          EVALUATION_RESULTS: "${{steps.evaluation.outputs.result}}"
+        with:
+          runners: evaluation

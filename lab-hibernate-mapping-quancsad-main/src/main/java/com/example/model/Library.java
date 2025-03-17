@@ -10,15 +10,12 @@ import java.util.List;
 public class Library {
 
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
 
     private String name;
-    @OneToMany(mappedBy = "library"
-
-    )
+    @OneToMany(mappedBy = "library")
     private List<Book> book;
 }
