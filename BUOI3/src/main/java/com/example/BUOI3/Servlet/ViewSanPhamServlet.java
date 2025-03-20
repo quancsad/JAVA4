@@ -11,7 +11,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.util.List;
-@WebServlet("/view-san-pham")
+@WebServlet("/view")
 public class ViewSanPhamServlet extends HttpServlet {
 
     @Override

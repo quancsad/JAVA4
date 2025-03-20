@@ -9,8 +9,5 @@
         <module name="BUOI3" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="BUOI3" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
