@@ -24,7 +24,7 @@ public class HibernateUtil {
             configuration.setProperty("hibernate.connection.driver_class", "org.h2.Driver");
             configuration.setProperty("hibernate.connection.url", "jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1");
             configuration.setProperty("hibernate.connection.username", "sa");
-            configuration.setProperty("hibernate.connection.password", "");
+            configuration.setProperty("hibernate.connection.password", "1233456");
 
             // Enable SQL logging
             configuration.setProperty("hibernate.show_sql", "true");
