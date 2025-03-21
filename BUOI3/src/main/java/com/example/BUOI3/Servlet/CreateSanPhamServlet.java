@@ -18,5 +18,7 @@ public class CreateSanPhamServlet extends HttpServlet {
         sanPham.setName("ahihi");
         Object object = sanPhamRepository.create(sanPham);
         resp.getWriter().println(object);
+        // tính tổng nhập 2 số nguyên GitHub Copilot
+        
     }
 }
