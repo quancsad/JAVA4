@@ -1,1 +1,6 @@
-https://www.youtube.com/watch?v=0xzKNnGACJY&list=PLRH2yDcir-AVV__8yu8qRTxNGb67m14oi&index=1
+<!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-core</artifactId>
+  <version>5.4.7.Final</version>
+</dependency>
