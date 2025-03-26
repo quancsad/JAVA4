@@ -18,7 +18,6 @@
   </tr>
   <c:forEach items="${dsHocSinh}" var="hocSinh">
   <tr>
-
       <td>${hocSinh.id}</td>
       <td>${hocSinh.name}</td>
       <td>${hocSinh.mathScore}</td>

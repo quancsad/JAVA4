@@ -44,4 +44,14 @@ public class StudentRepository {
         session.close();
     }
 
+
+    public void addStudent(Student student){
+        Session session = HibernateUtil.getSession();
+        Transaction transaction = session.beginTransaction();
+        student.setId(null);
+        session.save(student);
+        transaction.commit();
+        session.close();
+    }
+
 }
