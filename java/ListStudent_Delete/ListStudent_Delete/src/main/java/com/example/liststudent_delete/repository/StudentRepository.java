@@ -54,4 +54,12 @@ public class StudentRepository {
         session.close();
     }
 
+    public Student detailStudent(int id) {
+        List<Student> students = null;
+        Session session = HibernateUtil.getSession();
+        Query<Student> query = session.createQuery("from Student", Student.class);
+        students = query.getResultList();
+        session.close();
+        return students.stream().filter(s -> s.getId() == id).findFirst().orElse(null);
+    }
 }

@@ -16,10 +16,14 @@ public class StudentSaveServlet extends HttpServlet {
 
     private final StudentRepository studentRepository = new StudentRepository();
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String studentName = req.getParameter("name");
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String studentName = req.getParameter("StudentName");
+        String studentDiem = req.getParameter("mathScore");
+        String studentDate = req.getParameter("dob");
         Student student = new Student();
         student.setName(studentName);
+        student.setMathScore(studentDiem != null ? Float.parseFloat(studentDiem) : 0.0f); // Chuyển sang float
+        student.setDob(studentDate);
         studentRepository.addStudent(student);
         resp.sendRedirect("/view");
 

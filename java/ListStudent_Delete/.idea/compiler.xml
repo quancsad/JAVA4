@@ -9,8 +9,5 @@
         <module name="ListStudent_Delete" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ListStudent_Delete" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

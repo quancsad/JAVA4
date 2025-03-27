@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ListStudent_Delete/ListStudent_Delete.iml" filepath="$PROJECT_DIR$/ListStudent_Delete/ListStudent_Delete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JAVA4.iml" filepath="$PROJECT_DIR$/.idea/JAVA4.iml" />
     </modules>
   </component>
 </project>
